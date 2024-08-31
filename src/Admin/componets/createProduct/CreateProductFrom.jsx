@@ -71,9 +71,9 @@ const jwt=localStorage.getItem("jwt")
     console.log(productData);
   };
 
-
+// className="createProductContainer "
   return (
-    <Fragment className="createProductContainer ">
+    <Fragment >
       <Typography
         variant="h3"
         sx={{ textAlign: "center" }}

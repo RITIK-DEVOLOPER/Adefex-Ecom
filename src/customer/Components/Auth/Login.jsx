@@ -38,9 +38,9 @@ export default function LoginUserForm({ handleNext }) {
     dispatch(login(userData));
 
   };
-
+// className=" shadow-lg "
   return (
-    <React.Fragment className=" shadow-lg ">
+    <React.Fragment >
       <form className="w-full" onSubmit={handleSubmit}>
         <Grid container spacing={3}>
           <Grid item xs={12}>
