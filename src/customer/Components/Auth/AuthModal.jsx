@@ -13,11 +13,17 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 500,
+  width: {
+    xs: 300, // Mobile view
+    sm: 400, // Small screens like tablets
+    md: 500, // Default width for larger screens
+  },
   bgcolor: "background.paper",
   boxShadow: 24,
   p: 4,
+  borderRadius: 2, // Adds rounded corners for better UI on mobile
 };
+
 
 export default function AuthModal({ handleClose, open }) {
   const location = useLocation();
@@ -34,7 +40,7 @@ export default function AuthModal({ handleClose, open }) {
       aria-describedby="modal-modal-description"
       size="large"
     >
-      <Box className="rounded-md" sx={style}>
+      <Box className="rounded-md" sx={style} >
         {location.pathname === "/login" ? (
           <LoginUserForm />
         ) : (
