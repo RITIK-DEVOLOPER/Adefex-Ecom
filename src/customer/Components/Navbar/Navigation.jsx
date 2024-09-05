@@ -259,7 +259,7 @@ export default function Navigation() {
 
         <nav aria-label="Top" className="mx-auto">
           <div className="border-b border-gray-200">
-            <div className="flex h-16 items-center px-11">
+            <div className="flex h-16 items-center px-2">
               <button
                 type="button"
                 className="rounded-md bg-white p-2 text-gray-400 lg:hidden"
