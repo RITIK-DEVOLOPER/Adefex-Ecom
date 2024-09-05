@@ -59,8 +59,8 @@ A full-stack eCommerce application built with React and Spring Boot And Node Js.
 
 ## Installation
 
-1. Clone Frontend repository: `git clone https://github.com/ashok0001/e-commerce-server.git`
-2. Clone Backend Repository: `git clone https://github.com/ashok0001/e-commerce-server.git`
+<!-- 1. Clone Frontend repository: `git clone https://github.com/ashok0001/e-commerce-server.git`
+2. Clone Backend Repository: `git clone https://github.com/ashok0001/e-commerce-server.git` -->
 3. Change directory Frontend:`cd shopwithzosh`
 4. Change directory Backend: `cd e-commerce-server`
 5. Install frontend dependencies: `npm install`
@@ -70,7 +70,7 @@ A full-stack eCommerce application built with React and Spring Boot And Node Js.
 
 1. Start the frontend application: `npm start`
 2. Start the backend server:
-3. Access the application at `http://localhost:3000` in your web browser.
+3. Access the application at `http://localhost:5454` in your web browser.
 
 ## API Endpoints
 
