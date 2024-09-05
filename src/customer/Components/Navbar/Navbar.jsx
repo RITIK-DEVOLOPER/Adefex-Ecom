@@ -135,7 +135,7 @@ function Navbar() {
                 to="/men"
                 className="font-medium text-white hover:text-black"
               >
-                Men
+                Men 
               </Link>
             </li>
             <li>

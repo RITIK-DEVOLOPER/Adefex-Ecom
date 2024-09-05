@@ -1,6 +1,6 @@
 
 import axios from 'axios';
-const DEPLOYED='adefex-ecomm-backend.railway.internal'
+// const DEPLOYED='adefex-ecomm-backend.railway.internal'
 const LOCALHOST='http://localhost:5454'
 
 export const API_BASE_URL = LOCALHOST
