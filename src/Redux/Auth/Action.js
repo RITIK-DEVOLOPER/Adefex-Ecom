@@ -42,11 +42,17 @@ const loginSuccess = (user) => ({ type: LOGIN_SUCCESS, payload: user });
 const loginFailure = (error) => ({ type: LOGIN_FAILURE, payload: error });
 
 export const login = (userData) => async (dispatch) => {
+
+  
   dispatch(loginRequest());
   try {
+   
     const response = await axios.post(`${API_BASE_URL}/auth/signin`, userData);
+   
+    
     const user = response.data;
     if (user.jwt) localStorage.setItem("jwt", user.jwt);
+   
     console.log("login ", user);
     dispatch(loginSuccess(user));
   } catch (error) {
@@ -78,6 +84,8 @@ export const getAllCustomers = (token) => {
 
 export const getUser = (token) => {
   return async (dispatch) => {
+    console.log(API_BASE_URL);
+    
     dispatch({ type: GET_USER_REQUEST });
     try {
       const response = await axios.get(`${API_BASE_URL}/api/users/profile`, {

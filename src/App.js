@@ -8,6 +8,7 @@ import AdminPannel from "./Admin/AdminPannel";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { getUser } from "./Redux/Auth/Action";
+import { API_BASE_URL } from "./config/api";
 // import Routers from './Routers/Routers';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
   const dispatch = useDispatch();
   const jwt = localStorage.getItem("jwt");
   useEffect(() => {
+    console.log("UrL" ,API_BASE_URL);
     if (jwt) {
       dispatch(getUser(jwt));
     }
