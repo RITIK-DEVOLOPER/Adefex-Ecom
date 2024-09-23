@@ -1,5 +1,6 @@
 import axios from "axios";
-const DEPLOYED = "adefex-ecomm-backend-production.up.railway.app";
+
+const DEPLOYED = "https://adefex-ecomm-backend-production.up.railway.app";
 // const LOCALHOST = "http://localhost:5454";
 
 export const API_BASE_URL = DEPLOYED;
@@ -10,7 +11,9 @@ const api = axios.create({
 
 const token = localStorage.getItem("jwt");
 
-api.defaults.headers.common["Authorization"] = `Bearer ${token}`;
+if (token) {
+  api.defaults.headers.common["Authorization"] = `Bearer ${token}`;
+}
 
 api.defaults.headers.post["Content-Type"] = "application/json";
 
